@@ -1,4 +1,44 @@
 #!/bin/bash
+
+cat << EOF | sudo tee -a ~/.bashrc
+
+## Linux command
+
+alias ll='ls -la '
+
+## Docker command
+
+alias do='docker '
+alias dcp='docker-compose '
+alias dl='docker logs '
+alias dnl='docker network ls '
+alias dnc='docker network create '
+alias dncn='docker network connect '
+alias dpsn='docker ps -a -q '
+alias dps='docker ps -a'
+alias dvl='docker volume ls '
+alias dvc='docker volume create '
+alias dvr='docker volume rm '
+alias dr='docker run '
+alias da='docker attach '
+alias de='docker exec -it '
+alias drm='docker rm -f '
+alias dm='docker image '
+alias dms='docker images'
+alias dmr='docker image rm '
+alias dp='docker pull'
+alias ds='docker search '
+alias dnls='docker node ls '
+alias ds='docker search '
+
+## Kubectl command
+
+alias k='kubectl '
+alias des='describe '
+alias de='delete '
+alias km='kubeadm '
+alias kx='kubectl exec -it '
+alias kq='kubectl describe quota '
 alias kgp='kubectl get pod '
 alias kgn='kubectl get node '
 alias kgs='kubectl get svc '
@@ -21,6 +61,30 @@ alias kgr='kubectl get role '
 alias kgnp='kubectl get networkpolicies '
 alias kgsa='kubectl get serviceaccount '
 alias kgpsp='kubectl get podsecuritypolicies '
+
+alias kdesp='kubectl describe pod '
+alias kdesn='kubectl describe node '
+alias kdess='kubectl describe svc '
+alias kdesd='kubectl describe deploy '
+alias kdescm='kubectl describe configmap '
+alias kdesrc='kubectl describe rc '
+alias kdesrs='kubectl describe rs '
+alias kdessts='kubectl describe sts '
+alias kdesds='kubectl describe ds '
+alias kdessc='kubectl describe secret '
+alias kdesc='kubectl describe storageclasses'
+alias kdespv='kubectl describe pv '
+alias kdespvc='kubectl describe pvc '
+alias kdesr='kubectl describe role '
+alias kdesrb='kubectl describe rolebindings '
+alias kdescr='kubectl describe clusterroles '
+alias kdescb='kubectl describe clusterrolebindings '
+alias kdesi='kubectl describe ingress '
+alias kdesr='kubectl describe role '
+alias kdesnp='kubectl describe networkpolicies '
+alias kdesa='kubectl describe serviceaccount '
+alias kdespsp='kubectl describe podsecuritypolicies '
+
 alias kdp='kubectl delete pod '
 alias kdn='kubectl delete node '
 alias kds='kubectl delete svc '
@@ -43,6 +107,7 @@ alias kdr='kubectl delete role '
 alias kdnp='kubectl delete networkpolicies '
 alias kdsa='kubectl delete serviceaccount '
 alias kdpsp='kubectl delete podsecuritypolicy '
+
 alias kpp='kubectl patch pod '
 alias kpn='kubectl patch node '
 alias kps='kubectl patch svc '
@@ -65,6 +130,7 @@ alias kpr='kubectl patch role '
 alias kpnp='kubectl patch networkpolicies '
 alias kpsa='kubectl patch serviceaccount '
 alias kppsp='kubectl patch podsecuritypolicy '
+
 alias kep='kubectl edit pod '
 alias ken='kubectl edit node '
 alias kes='kubectl edit svc '
@@ -87,10 +153,25 @@ alias ker='kubectl edit role '
 alias kenp='kubectl edit networkpolicy '
 alias kesa='kubectl edit serviceaccount '
 alias kepsp='kubectl edit podsecuritypolicy '
-alias kee='kubectl get event '
+
+alias kge='kubectl get event '
+
 alias kl='kubectl logs '
 alias kn='kubectl config set-context --current --namespace '
+alias kgcc='cat ~/.kube/config | grep current | awk '{ print $2 }''
 alias kgns='kubectl get namespace '
 alias kgct='kubectl config get-contexts '
 alias kr='kubectl run --dry-run=client -oyaml --image '
 alias ka='kubectl apply -f '
+alias kd='kubectl delete -f '
+
+## Other command
+
+alias s1='sudo su - '
+alias yd='yum install docker -y '
+alias ed='systemctl enable docker '
+alias sd='systemctl start docker '
+
+EOF
+
+. ~/.bashrc
