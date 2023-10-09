@@ -1,22 +1,23 @@
 #!/bin/bash
 
-## Run bash from internet using following command: bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )
+## Run bash from internet using following command: 
+## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )
 
 cat << EOF | sudo tee -a ~/.bashrc
 
 ## Linux command
 
 alias ll='ls -la '
-alias lll='ls -la /'
+alias lll='ll /'
 alias lh='ll /home'
-alias lb='ls /bin'
-alias letc='ls /etc'
+alias lb='ll /bin'
+alias letc='ll /etc'
 alias lbin='ll /usr/local/bin '
-alias lrp='ls /etc/yum.repo.d'
+alias lrp='ll /etc/yum.repos.d'
 alias md='mkdir '
 alias rf='rm -rf '
 alias hi='hostname -i '
-alias hs='hostname '
+alias hs='hostnamectl status '
 alias cl='clear '
 alias cb='cd ..'
 alias cb2='cd ../..'
@@ -236,7 +237,7 @@ alias yd='yum install docker -y '
 alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
-alias ch1='sudo chmod +x '
+alias chx='sudo chmod +x '
 alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose '
 
 
