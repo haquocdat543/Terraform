@@ -13,6 +13,7 @@ cat << EOF | sudo tee -a ~/.bashrc
 ## Linux command
 
 alias ll='ls -la '
+alias lr='ll /root '
 alias lll='ll /'
 alias lh='ll /home'
 alias lb='ll /bin'
@@ -29,6 +30,7 @@ alias cb2='cd ../..'
 alias cb3='cd ../../..'
 alias val='vi /root/.bashrc'
 alias eb='exec bash '
+alias catos='cat /etc/os-release '
 
 ## Git command
 
@@ -51,6 +53,7 @@ alias glo='git log --oneline'
 alias glog='git log --oneline --graph '
 alias gp='git push '
 alias gr='git remote '
+alias gpl='git pull '
 alias gra='git remote add '
 alias gsl='git stash list '
 alias gss='git stash save '
@@ -230,6 +233,7 @@ alias kd='kubectl delete -f '
 
 ## Other command
 
+
 alias s1='sudo su - '
 alias yi='yum install -y '
 alias yu='yum update -y '
@@ -238,12 +242,17 @@ alias au='apt update -y '
 alias se='systemctl enable '
 alias ss='systemctl start '
 alias sr='systemctl restart '
+alias yma='yum-config-manager --add-repo '
+alias yme='yum-config-manager --enable '
+alias darp='dnf config-manager --add-repo '
+alias ynv='yum install -y neovim '
 alias yd='yum install docker -y '
 alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
 alias chx='sudo chmod +x '
-alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose '
+alias idc='sudo curl -L
+"https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose '
 
 
 EOF
