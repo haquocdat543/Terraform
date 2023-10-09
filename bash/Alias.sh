@@ -225,5 +225,5 @@ alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
 EOF
 
-. ~/.bashrc
+./root/.bashrc
 
