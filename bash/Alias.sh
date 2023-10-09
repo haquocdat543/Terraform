@@ -7,14 +7,26 @@ cat << EOF | sudo tee -a ~/.bashrc
 ## Linux command
 
 alias ll='ls -la '
-alias lll='ls -lrt '
+alias lll='ls -la /'
+alias lh='ll /home'
+alias lb='ls /bin'
+alias letc='ls /etc'
+alias lbin='ll /usr/local/bin '
+alias lrp='ls /etc/yum.repo.d'
 alias md='mkdir '
 alias rf='rm -rf '
-alias hi='hostname '
+alias hi='hostname -i '
 alias hs='hostname '
+alias cl='clear '
+alias cb='cd ..'
+alias cb2='cd ../..'
+alias cb3='cd ../../..'
+alias val='vi /root/.bashrc'
+alias eb='exec bash '
 
 ## Git command
 
+alias gi='git init'
 alias gcl='git clone '
 alias gc='git commit -m '
 alias gs='git status '
@@ -69,11 +81,12 @@ alias dsc='docker service create '
 alias dsr='docker service rm '
 alias dstd='docker stack deploy -c '
 alias dstr='docker stack rm '
-alias db='docker build -f . -t '
-alias dbf='docker build -t '
+alias db='docker build -f Dockerfile . -t '
 alias dt='docker tag '
 alias dpsh='docker push '
-alias dswi='docker swarm init --advertise-addr= '
+alias dswi='docker swarm init --advertise-addr='
+alias djm='docker swarm join-token manager '
+alias djw='docker swarm join-token worker '
 
 ## Kubectl command
 
@@ -223,8 +236,10 @@ alias yd='yum install docker -y '
 alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
-EOF
+alias ch1='sudo chmod +x '
+alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose '
 
-source ~/.bashrc
+
+EOF
 
 exec bash
