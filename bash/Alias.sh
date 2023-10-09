@@ -224,7 +224,7 @@ alias yd='yum install docker -y '
 alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
-
 EOF
 
 . ~/.bashrc
+
