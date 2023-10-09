@@ -227,3 +227,4 @@ EOF
 
 source ~/.bashrc
 
+exec bash
