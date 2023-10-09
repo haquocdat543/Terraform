@@ -14,12 +14,18 @@ cat << EOF | sudo tee -a ~/.bashrc
 
 alias ll='ls -la '
 alias lr='ll /root '
+alias cdr='cd /root '
 alias lll='ll /'
+alias cdl='cd / '
 alias lh='ll /home'
+alias cdh='cd /home'
 alias lb='ll /bin'
+alias cdb='cd /bin'
 alias letc='ll /etc'
+alias cdetc='cd /etc'
 alias lbin='ll /usr/local/bin '
 alias lrp='ll /etc/yum.repos.d'
+alias cdrp='cd /etc/yum.repos.d'
 alias md='mkdir '
 alias rf='rm -rf '
 alias hi='hostname -i '
@@ -31,6 +37,8 @@ alias cb3='cd ../../..'
 alias val='vi /root/.bashrc'
 alias eb='exec bash '
 alias catos='cat /etc/os-release '
+alias lssh='ll /root/.ssh '
+alias cdssh='cd /root/.ssh '
 
 ## Git command
 
