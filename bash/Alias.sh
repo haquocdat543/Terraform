@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 cat << EOF | sudo tee -a ~/.bashrc
 
 ## Linux command
