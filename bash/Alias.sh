@@ -1,10 +1,42 @@
-#!/bin/bash
-
+#1/bin/bash
 cat << EOF | sudo tee -a ~/.bashrc
 
 ## Linux command
 
 alias ll='ls -la '
+alias lll='ls -lrt '
+alias md='mkdir '
+alias rf='rm -rf '
+alias hi='hostname '
+alias hs='hostname '
+
+## Git command
+
+alias gcl='git clone '
+alias gc='git commit -m '
+alias gs='git status '
+alias ga='git add '
+alias gaa='git add . '
+alias g1='git reset --soft HEAD~1 '
+alias g0='git reset --hard HEAD~1 '
+alias g2='git reset -- '
+alias g3='git restore -- '
+alias gb='git branch '
+alias gsw='git switch '
+alias gcb='git checkout -b '
+alias gck='git checkout '
+alias gl='git log '
+alias glo='git log --oneline'
+alias glog='git log --oneline --graph '
+alias gp='git push '
+alias gr='git remote '
+alias gra='git remote add '
+alias gsl='git stash list '
+alias gss='git stash save '
+alias gsd='git stash drop '
+alias gssh='git stash show '
+alias gcn='git config --global user.name '
+alias gce='git config --global user.email '
 
 ## Docker command
 
@@ -29,7 +61,16 @@ alias dmr='docker image rm '
 alias dp='docker pull'
 alias ds='docker search '
 alias dnls='docker node ls '
-alias ds='docker search '
+alias dsps='docker service ps '
+alias dsc='docker service create '
+alias dsr='docker service rm '
+alias dstd='docker stack deploy -c '
+alias dstr='docker stack rm '
+alias db='docker build -f . -t '
+alias dbf='docker build -t '
+alias dt='docker tag '
+alias dpsh='docker push '
+alias dswi='docker swarm init --advertise-addr= '
 
 ## Kubectl command
 
@@ -155,6 +196,7 @@ alias kesa='kubectl edit serviceaccount '
 alias kepsp='kubectl edit podsecuritypolicy '
 
 alias kge='kubectl get event '
+alias ktn='kubectl taint node '
 
 alias kl='kubectl logs '
 alias kn='kubectl config set-context --current --namespace '
@@ -168,7 +210,15 @@ alias kd='kubectl delete -f '
 ## Other command
 
 alias s1='sudo su - '
+alias yi='yum install -y '
+alias yu='yum update -y '
+alias ai='apt install -y '
+alias au='apt update -y '
+alias se='systemctl enable '
+alias ss='systemctl start '
+alias sr='systemctl restart '
 alias yd='yum install docker -y '
+alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
 
