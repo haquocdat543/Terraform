@@ -39,6 +39,14 @@ alias eb='exec bash '
 alias catos='cat /etc/os-release '
 alias lssh='ll /root/.ssh '
 alias cdssh='cd /root/.ssh '
+alias c400='chmod 400 '
+alias c200='chmod 200 '
+alias c300='chmod 300 '
+alias c600='chmod 600 '
+alias c700='chmod 700 '
+alias c500='chmod 500 '
+alias c100='chmod 100 '
+alias c777='chmod 777 '
 
 ## Git command
 
