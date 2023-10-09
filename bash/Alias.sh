@@ -1,4 +1,8 @@
+
 #!/bin/bash
+
+## Run bash from internet using following command: bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )
+
 cat << EOF | sudo tee -a ~/.bashrc
 
 ## Linux command
