@@ -30,7 +30,6 @@ alias mv='mv -i'
 ### Linux command
 
 alias ll='ls -la '
-alias cdr='ll /root '
 alias lr='ll ~ '
 alias lll='ll /'
 alias cdl='cd / '
