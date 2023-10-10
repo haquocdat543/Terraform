@@ -32,7 +32,7 @@ then
 	touch ~/.vimrc
 fi
 
-## If .vimrc.origin does not exist. Create it
+## If .vimrc.backup does not exist. Create it
 if [ ! -f ~/.vimrc.backup ]
 then
 	cp ~/.vimrc ~/.vimrc.backup
