@@ -317,3 +317,5 @@ alias chxdc='sudo chmod +x /
 EOF
 
 exec bash
+
+update2
