@@ -2,19 +2,24 @@
 
 ### This is configuration for .vimrc file
 
-##if [ ! -f ~/preconfig/run.sh ]
-##then
-##	touch ~/preconfig/run.sh
-##fi
+if [ ! -d ~/preconfig ]
+then
+	md ~/preconfig
+fi
 
-##if [ ! -f ~/preconfig/.vimrc ]
-##then
-##	touch ~/preconfig/.vimrc
-##fi
+if [ -f ~/preconfig/run.sh ]
+then
+	rm ~/preconfig/run.sh
+fi
+
+if [ -f ~/preconfig/.vimrc ]
+then
+	rm ~/preconfig/.vimrc
+fi
 
 cat << EOF | sudo tee ~/preconfig/run.sh
 
-rm -f ~/preconfig/previmrc
+rm ~/preconfig/previmrc
 mv ~/.vimrc ~/preconfig/previmrc
 mv ~/preconfig/.vimrc ~/.vimrc
 
