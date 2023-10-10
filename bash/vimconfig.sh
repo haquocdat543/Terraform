@@ -2,6 +2,12 @@
 
 ### This is configuration for .vimrc file
 
+DIR=~/preconfig
+
+if [ ! -d "$DIR" ]; then
+  md ~/preconfig
+fi
+
 rm -f ~/preconfig/run.sh
 
 cat << EOF | sudo tee ~/preconfig/run.sh
