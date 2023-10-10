@@ -20,7 +20,7 @@ fi
 cat << EOF | sudo tee -a ~/preconfig/run.sh
 
 
-if [ -f ~/preconfig/previmrc]
+if [ -f ~/preconfig/previmrc ]
 then
 	rm ~/preconfig/previmrc
 fi
