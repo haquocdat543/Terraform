@@ -73,7 +73,7 @@ alias c700='chmod 700 '
 alias c500='chmod 500 '
 alias c100='chmod 100 '
 alias c777='chmod 777 '
-alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )'
+alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
 
 ### Git command
 
