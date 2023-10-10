@@ -312,8 +312,7 @@ alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
 alias chx='sudo chmod +x '
-alias chxdc='sudo chmod +x /
-
-EOF
+alias chxdc='sudo chmod +x /usr/local/bin/docker-compose '
+alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose'
 
 exec bash
