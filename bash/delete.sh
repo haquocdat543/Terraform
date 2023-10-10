@@ -5,7 +5,7 @@
 
 ## all file and folder in of vim configuration and .bashrc file
 rm ~/.vimrc
-rf ~/preconfig
+rm -rf ~/preconfig
 rm ~/.bashrc
 ## Restore backup files
 mv ~/.vimrc.backup ~/.vimrc
