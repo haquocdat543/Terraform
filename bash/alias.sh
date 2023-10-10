@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Run bash from internet using following command: 
-## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )
+## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )
 ## If you want to run k8s master on centos. Run following command: 
 ## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-centos.sh)
 ## If you want to run k8s worker on centos. Run following command: 
