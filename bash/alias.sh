@@ -10,7 +10,13 @@
 
 ### clean "~/.bashrc"  before writing new alias
 
+if [ ! -f ~/bashrc.backup]
+then
+	mv -f ~/.bashrc ~/.bashrc.backup
+fi
+
 if [ -f ~/bashrc~ ]
+
 then
 	rm -f ~/.bashrc~
 fi
@@ -88,6 +94,7 @@ alias c100='chmod 100 '
 alias c777='chmod 777 '
 alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh ) '
 alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
+alias dall='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/delete.sh) '
 alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-ubuntu.sh )'
 alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-ubuntu.sh )'
 alias mc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-centos.sh )'
