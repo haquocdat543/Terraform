@@ -5,7 +5,7 @@
 ## all file and folder in of vim configuration and .bashrc file
 rm -rf ~/preconfig
 sudo rm -f ~/.bashrc~
-if [ -f ~/Terraform]
+if [ -f ~/Terraform ]
 then
 	rm ~/Terraform
 fi
