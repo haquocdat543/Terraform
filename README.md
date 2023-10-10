@@ -5,12 +5,12 @@
 ### Alias
 ```
 alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
-update
+up1
 ```
 ### Vim Configuration 
 ```
 alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh )'
-update2
+up2
 ```
 ## Install k8s
 
