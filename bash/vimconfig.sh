@@ -26,14 +26,16 @@ then
 	rm ~/preconfig/previmrc
 fi
 
-## If .vimrc.origin does not exist. Delete it
+## If .vimrc in root foleder does not exist. Create it
 if [ ! -f ~/.vimrc ]
 then
 	touch ~/.vimrc
 fi
+
+## If .vimrc.origin does not exist. Create it
 if [ ! -f ~/.vimrc.backup ]
 then
-	mv ~/.vimrc ~/.vimrc.backup
+	cp ~/.vimrc ~/.vimrc.backup
 fi
 ## move .vimrc to previmrc file in preconfig folder
 mv ~/.vimrc ~/preconfig/previmrc
