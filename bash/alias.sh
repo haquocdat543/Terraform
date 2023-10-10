@@ -343,7 +343,7 @@ EOF
 
 exec bash
 
-if [ -f ~/bashrc~ ]
+if [ -f ~/.bashrc~ ]
 then
 	rm -f ~/.bashrc~
 fi
