@@ -343,4 +343,5 @@ EOF
 
 exec bash
 
+cl
 
