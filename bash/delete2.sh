@@ -5,9 +5,10 @@
 ## all file and folder in of vim configuration and .bashrc file
 rm -rf ~/preconfig
 sudo rm -f ~/.bashrc~
-if [ -f ~/Terraform ]
+
+if [ -d ~/Terraform ]
 then
-	rm ~/Terraform
+	rf ~/Terraform
 fi
 ## Restore backup files
 mv ~/.vimrc.backup ~/.vimrc
