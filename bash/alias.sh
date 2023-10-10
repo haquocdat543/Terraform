@@ -12,7 +12,7 @@
 
 if [ ! -f ~/.bashrc ]
 then
-	touch ~/.bashrc
+	touch ~/.bashrc && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/default-bashrc | sudo tee -a ~/.bashrc 
 fi
 
 if [ ! -f ~/.bashrc.backup ]
