@@ -321,6 +321,7 @@ alias kd='kubectl delete -f '
 
 
 alias s1='sudo su - '
+alias s2='su - ec2-user'
 alias yi='yum install -y '
 alias yu='yum update -y '
 alias ai='apt install -y '
