@@ -8,9 +8,23 @@
 ## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-centos.sh)
 ## If you want to run k8s worker or master on ubuntu. Replace centos with ubuntu 
 
+### clean "~/.bashrc"  before writing new alias
+
+sudo sed '/^alias/d' ~/.bashrc | sudo tee ~/.bashrc
+sudo sed '/^$/d' ~/.bashrc | sudo tee ~/.bashrc
+sudo sed '/^###/d' ~/.bashrc | sudo tee ~/.bashrc
+
+bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
+
 cat << EOF | sudo tee -a ~/.bashrc
 
-## Linux command
+### User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+### Linux command
 
 alias ll='ls -la '
 alias lr='ll /root '
@@ -31,6 +45,8 @@ alias rf='rm -rf '
 alias hoi='hostname -i '
 alias hs='hostnamectl status '
 alias hi='history '
+alias hz='hi | tail -n 10 '
+alias h2='hi | tail -n 20 '
 alias cl='clear '
 alias cb='cd ..'
 alias cb2='cd ../..'
@@ -38,11 +54,12 @@ alias cb3='cd ../../..'
 alias val='vi /root/.bashrc'
 alias vrc='vi /root/.vimrc'
 alias eb='exec bash '
-alias catos='cat /etc/os-release '
+alias cos='cat /etc/os-release '
 alias lssh='ll /root/.ssh '
 alias rn='route -n '
 alias ir='ip route '
 alias ex='exit '
+alias cp='cp -rf '
 alias 25519='ssh-keygen -t ed25519 -C '
 alias cdssh='cd /root/.ssh '
 alias c400='chmod 400 '
@@ -54,7 +71,7 @@ alias c500='chmod 500 '
 alias c100='chmod 100 '
 alias c777='chmod 777 '
 
-## Git command
+### Git command
 
 alias gi='git init'
 alias gcl='git clone '
@@ -86,7 +103,7 @@ alias gssh='git stash show '
 alias gcn='git config --global user.name '
 alias gce='git config --global user.email '
 
-## Docker command
+### Docker command
 
 alias do='docker '
 alias dcp='docker-compose '
@@ -121,7 +138,7 @@ alias dswi='docker swarm init --advertise-addr='
 alias djm='docker swarm join-token manager '
 alias djw='docker swarm join-token worker '
 
-## Kubectl command
+### Kubectl command
 
 alias k='kubectl '
 alias des='describe '
@@ -255,7 +272,7 @@ alias kr='kubectl run --dry-run=client -oyaml --image '
 alias ka='kubectl apply -f '
 alias kd='kubectl delete -f '
 
-## Other command
+### Other command
 
 
 alias s1='sudo su - '
@@ -275,9 +292,10 @@ alias yg='yum install git -y '
 alias ed='systemctl enable docker '
 alias sd='systemctl start docker '
 alias chx='sudo chmod +x '
-alias idc='sudo curl -L
-"https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose '
+alias chxdc='sudo chmod +x /usr/local/bin/docker-compose '
+alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose'
 
+### EndOfAlias
 
 EOF
 
