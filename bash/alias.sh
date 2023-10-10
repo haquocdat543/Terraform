@@ -63,6 +63,9 @@ alias 25519gen='ssh-keygen -t ed25519 -C '
 alias 25519pu='cat ~/.ssh/id_ed25519.pub '
 alias 25519pr='cat ~/.ssh/id_ed25519.pub '
 alias rv='. ~/preconfig/run.sh '
+alias b0='cp -f ~/.bashrc ~/.bashrc~ '
+alias b1='rm ~/.bashrc'
+alias b2='cp -f  ~/.bashrc~ ~/.bashrc '
 alias cdssh='cd /root/.ssh '
 alias c400='chmod 400 '
 alias c200='chmod 200 '
@@ -304,6 +307,4 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 exec bash
-
-update2
 
