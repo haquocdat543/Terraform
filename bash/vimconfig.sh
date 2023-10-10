@@ -27,11 +27,11 @@ then
 fi
 
 ## If .vimrc.origin does not exist. Delete it
-if [ ! -f ~/.vimrc]
+if [ ! -f ~/.vimrc ]
 then
 	touch ~/.vimrc
 fi
-if [ ! -f ~/.vimrc.backup]
+if [ ! -f ~/.vimrc.backup ]
 then
 	mv ~/.vimrc ~/.vimrc.backup
 fi
