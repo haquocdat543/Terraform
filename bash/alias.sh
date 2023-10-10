@@ -10,7 +10,13 @@
 
 ### clean "~/.bashrc"  before writing new alias
 
-if [ ! -f ~/bashrc.backup ]
+if [ ! -f ~/.bashrc ]
+then
+	touch ~/.bashrc
+fi
+
+if [ ! -f ~/.bashrc.backup ]
+
 then
 	cp -f ~/.bashrc ~/.bashrc.backup
 fi
