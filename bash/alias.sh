@@ -11,7 +11,6 @@
 ### clean "~/.bashrc"  before writing new alias
 
 sudo sed '/^alias/d' ~/.bashrc | sudo tee ~/.bashrc
-sudo sed '/^$/d' ~/.bashrc | sudo tee ~/.bashrc
 sudo sed '/^##/d' ~/.bashrc | sudo tee ~/.bashrc
 
 cat << EOF | sudo tee -a ~/.bashrc
@@ -73,7 +72,8 @@ alias c700='chmod 700 '
 alias c500='chmod 500 '
 alias c100='chmod 100 '
 alias c777='chmod 777 '
-alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
+alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh ) '
+alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
 
 ### Git command
 
@@ -305,5 +305,5 @@ EOF
 
 exec bash
 
-. $(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
+update2
 
