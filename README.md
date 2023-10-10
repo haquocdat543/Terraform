@@ -4,12 +4,12 @@
 
 ### Alias
 ```
-alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
+alias up1='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
 up1
 ```
 ### Vim Configuration 
 ```
-alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh )'
+alias up2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh )'
 up2
 ```
 ## Install k8s
