@@ -22,7 +22,6 @@ then
 fi
 
 if [ -f ~/bashrc~ ]
-
 then
 	rm -f ~/.bashrc~
 fi
@@ -343,5 +342,7 @@ EOF
 
 exec bash
 
-cl
-
+if [ -f ~/bashrc~ ]
+then
+	rm -f ~/.bashrc~
+fi
