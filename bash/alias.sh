@@ -30,6 +30,11 @@ mv -f ~/.bashrc ~/.bashrc~
 
 sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^$/d' | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
+if [ -f ~/.bashrc~]
+then
+	rm ~/.bashrc~/
+fi
+
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
@@ -343,7 +348,4 @@ EOF
 
 exec bash
 
-if [ -f ~/.bashrc~ ]
-then
-	rm ~/.bashrc~
-fi
+
