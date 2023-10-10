@@ -12,7 +12,7 @@
 
 sudo sed '/^alias/d' ~/.bashrc | sudo tee ~/.bashrc
 sudo sed '/^$/d' ~/.bashrc | sudo tee ~/.bashrc
-sudo sed '/^###/d' ~/.bashrc | sudo tee ~/.bashrc
+sudo sed '/^##/d' ~/.bashrc | sudo tee ~/.bashrc
 
 cat << EOF | sudo tee -a ~/.bashrc
 
@@ -25,8 +25,7 @@ alias mv='mv -i'
 ### Linux command
 
 alias ll='ls -la '
-alias lr='ll /root '
-alias cdr='cd /root '
+alias lr='ll ~ '
 alias lll='ll /'
 alias cdl='cd / '
 alias lh='ll /home'
