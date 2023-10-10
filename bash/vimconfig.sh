@@ -19,7 +19,11 @@ fi
 
 cat << EOF | sudo tee -a ~/preconfig/run.sh
 
-rm ~/preconfig/previmrc
+
+if [ -f ~/preconfig/previmrc]
+then
+	rm ~/preconfig/previmrc
+fi
 mv ~/.vimrc ~/preconfig/previmrc
 mv ~/preconfig/.vimrc ~/.vimrc
 
