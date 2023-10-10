@@ -94,6 +94,7 @@ alias c100='chmod 100 '
 alias c777='chmod 777 '
 alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh ) '
 alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
+alias updateVim='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/deleteVim.sh) '
 alias dall='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/delete.sh) '
 alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-ubuntu.sh )'
 alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-ubuntu.sh )'
@@ -332,5 +333,5 @@ EOF
 
 exec bash
 
-update2
+updateVim
 
