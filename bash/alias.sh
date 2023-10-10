@@ -23,9 +23,9 @@ cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+alias rm='rm -f'
+alias cp='cp -rf'
+alias mv='mv -f'
 
 ### Linux command
 
@@ -66,7 +66,6 @@ alias lssh='ll /root/.ssh '
 alias rn='route -n '
 alias ir='ip route '
 alias ex='exit '
-alias cp='cp -rf '
 alias 25519del='rm -f  ~/.ssh/id_ed25519* '
 alias 25519gen='ssh-keygen -t ed25519 -C '
 alias 25519pu='cat ~/.ssh/id_ed25519.pub '
@@ -322,3 +321,5 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 exec bash
+
+update2
