@@ -17,7 +17,7 @@ then
 	rm ~/preconfig/.vimrc
 fi
 
-cat << EOF | sudo tee ~/preconfig/run.sh
+cat << EOF | sudo tee -a ~/preconfig/run.sh
 
 rm ~/preconfig/previmrc
 mv ~/.vimrc ~/preconfig/previmrc
@@ -25,7 +25,7 @@ mv ~/preconfig/.vimrc ~/.vimrc
 
 EOF
 
-cat << EOF | sudo tee ~/preconfig/.vimrc
+cat << EOF | sudo tee -a ~/preconfig/.vimrc
 
 set history=200
 set paste
