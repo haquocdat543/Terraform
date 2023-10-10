@@ -345,5 +345,5 @@ exec bash
 
 if [ -f ~/.bashrc~ ]
 then
-	rm -f ~/.bashrc~
+	rm ~/.bashrc~
 fi
