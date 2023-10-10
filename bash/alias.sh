@@ -10,7 +10,7 @@
 
 ### clean "~/.bashrc"  before writing new alias
 
-if [ ! -f ~/bashrc~ ]
+if [ -f ~/bashrc~ ]
 then
 	rm -f ~/.bashrc~
 fi
