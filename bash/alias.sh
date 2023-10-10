@@ -85,6 +85,14 @@ alias c100='chmod 100 '
 alias c777='chmod 777 '
 alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh ) '
 alias update2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
+alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-ubuntu.sh )'
+alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-ubuntu.sh )'
+wu
+alias mc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-centos.sh )'
+mc
+alias wc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-centos )'
+wc
+
 
 ### Git command
 
@@ -315,4 +323,3 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 exec bash
-
