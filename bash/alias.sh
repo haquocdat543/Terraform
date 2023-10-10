@@ -10,8 +10,14 @@
 
 ### clean "~/.bashrc"  before writing new alias
 
-sudo sed '/^alias/d' ~/.bashrc | sudo tee ~/.bashrc
-sudo sed '/^##/d' ~/.bashrc | sudo tee ~/.bashrc
+if [ ! -f ~/bashrc~ ]
+then
+	rm -f ~/.bashrc~
+fi
+
+mv -f ~/.bashrc ~/.bashrc~
+
+sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
 cat << EOF | sudo tee -a ~/.bashrc
 
