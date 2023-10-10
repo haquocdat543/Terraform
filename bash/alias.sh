@@ -336,5 +336,4 @@ EOF
 
 exec bash
 
-updateVim
 
