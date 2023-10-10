@@ -8,7 +8,7 @@ sudo rm -f ~/.bashrc~
 
 if [ -d ~/Terraform ]
 then
-	rf ~/Terraform
+	rm -rf ~/Terraform
 fi
 ## Restore backup files
 mv ~/.vimrc.backup ~/.vimrc
