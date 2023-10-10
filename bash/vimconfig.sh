@@ -2,13 +2,15 @@
 
 ### This is configuration for .vimrc file
 
-DIR=~/preconfig
-
-if [ ! -d "$DIR" ]; then
-  md ~/preconfig
+if [ ! -f ~/preconfig/run.sh ]
+then
+	md ~/preconfig/run.sh
 fi
 
-rm -f ~/preconfig/run.sh
+if [ ! -f ~/preconfig/.vimrc ]
+then
+	md ~/preconfig/.vimrc
+fi
 
 cat << EOF | sudo tee ~/preconfig/run.sh
 
