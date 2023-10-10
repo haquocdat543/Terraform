@@ -12,3 +12,4 @@ mv ~/.vimrc.backup ~/.vimrc
 mv ~/.bashrc.backup ~/.bashrc
 ## Clear all alias
 exec bash
+
