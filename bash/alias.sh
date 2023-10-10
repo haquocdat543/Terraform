@@ -14,8 +14,6 @@ sudo sed '/^alias/d' ~/.bashrc | sudo tee ~/.bashrc
 sudo sed '/^$/d' ~/.bashrc | sudo tee ~/.bashrc
 sudo sed '/^###/d' ~/.bashrc | sudo tee ~/.bashrc
 
-bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
-
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
@@ -76,7 +74,7 @@ alias c700='chmod 700 '
 alias c500='chmod 500 '
 alias c100='chmod 100 '
 alias c777='chmod 777 '
-alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh ) '
+alias update='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/Alias.sh )'
 
 ### Git command
 
@@ -307,3 +305,5 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 exec bash
+
+bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
