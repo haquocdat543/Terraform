@@ -4,7 +4,7 @@
 
 if [ ! -d ~/preconfig ]
 then
-	md ~/preconfig
+	mkdir ~/preconfig
 fi
 
 if [ -f ~/preconfig/run.sh ]
