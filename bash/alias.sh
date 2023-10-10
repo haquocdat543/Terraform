@@ -17,7 +17,7 @@ fi
 
 mv -f ~/.bashrc ~/.bashrc~
 
-sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^##/d' | sudo tee ~/.bashrc
+sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^$/d' | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
 cat << EOF | sudo tee -a ~/.bashrc
 
