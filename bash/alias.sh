@@ -305,5 +305,5 @@ EOF
 
 exec bash
 
-bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
+sudo bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh)
 
