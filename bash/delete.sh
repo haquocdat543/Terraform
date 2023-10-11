@@ -4,8 +4,8 @@
 ### This is configuration for .vimrc file
 
 ## Delete .vimrc and .bashrc in root folder 
-rm -f ~/.vimrc
-rm -f ~/.bashrc
+sudo rm -f ~/.vimrc
+sudo rm -f ~/.bashrc
 
 ## Restore backup files
 ## If .vimrc in root folder does not exist. mv it from preconfig/backup folder
