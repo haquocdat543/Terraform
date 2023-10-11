@@ -24,10 +24,6 @@ fi
 rm -rf ~/preconfig
 sudo rm -f ~/.bashrc~
 
-## Clear all alias
-exec bash
-
-
 ## If Terraform folder exist. Delete it
 if [ -d ~/Terraform ]
 then
