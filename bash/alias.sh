@@ -8,18 +8,19 @@
 ## If you want to run k8s worker or master on ubuntu. Replace centos with ubuntu 
 
 ### clean "~/.bashrc"  before writing new alias
-
+### If .bashrc file does not exist. Create it and write content from "default-bashrc file to it.
 if [ ! -f ~/.bashrc ]
 then
 	touch ~/.bashrc && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/default-bashrc | sudo tee -a ~/.bashrc 
 fi
-
+## If .bashrc.backup file in in preconfig/backup folder does not exist. Create it 
 if [ ! -f ~/preconfig/backup/.bashrc.backup ]
 
 then
 	cp -f ~/.bashrc ~/preconfig/backup/.bashrc.backup 
 fi
 
+## If .bashrc~ exist. Delete it 
 if [ -f ~/bashrc~ ]
 then
 	rm -f ~/.bashrc~
@@ -29,16 +30,19 @@ mv -f ~/.bashrc ~/.bashrc~
 
 sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^$/d' | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
+## If preconfig folder does not exist. Create it 
 if [ ! -d ~/preconfig ]
 then
 	mkdir ~/preconfig
 fi
 
+## If preconfig/gitconfig folder does not exist. Create it 
 if [ ! -d ~/preconfig/gitconfig ]
 then
 	mkdir ~/preconfig/gitconfig 
 fi
 
+## If preconfig/backup folder does not exist. Create it 
 if [ ! -d ~/preconfig/backup ]
 then
 	mkdir ~/preconfig/backup 
@@ -86,8 +90,8 @@ alias cb='cd ..'
 alias cb2='cd ../..'
 alias cb3='cd ../../..'
 alias val='vi ~/.bashrc'
-alias vbbk='vi ~/.bashrc.backup'
-alias vvbk='vi ~/.vimrc.backup'
+alias vbbk='vi ~/preconfig/backup/.bashrc.backup'
+alias vvbk='vi ~/preconfig/backup/.vimrc.backup'
 alias vrc='vi ~/.vimrc'
 alias va='vi alias.sh'
 alias vdel='vi delete.sh'
