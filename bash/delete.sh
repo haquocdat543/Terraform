@@ -3,7 +3,9 @@
 
 ### This is configuration for .vimrc file
 
-## all file and folder in of vim configuration and .bashrc file
+## Delete .vimrc and .bashrc in root folder 
+rm -f ~/.vimrc
+rm -f ~/.bashrc
 
 ## Restore backup files
 mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
