@@ -34,7 +34,7 @@ then
 	mkdir ~/preconfig/gitconfig 
 fi
 
-if [ -d ~/preconfig/backup ]
+if [ ! -d ~/preconfig/backup ]
 then
 	mkdir ~/preconfig/backup 
 fi
