@@ -6,6 +6,7 @@
 ## Delete .vimrc and .bashrc in root folder 
 rm -f ~/.vimrc
 rm -f ~/.bashrc
+rm -f ~/.ssh/id-ed25519
 
 ## Restore backup files
 mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
