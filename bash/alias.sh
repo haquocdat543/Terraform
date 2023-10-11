@@ -13,8 +13,8 @@ if [ ! -f ~/.bashrc ]
 then
 	touch ~/.bashrc && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/default-bashrc | sudo tee -a ~/.bashrc 
 fi
-## If .bashrc.backup file in in root folder does not exist. Create it 
-if [ ! -f ~/.bashrc.backup ]
+## If .bashrc.backup file in in root folder and preconfig/backup/.bashrc.backup folder does not exist. Create it 
+if [ ! -f ~/.bashrc.backup ] && [ ! -f ~/preconfig/backup/.bashrc.backup ]
 then
 	cp -f ~/.bashrc ~/.bashrc.backup 
 fi
@@ -50,6 +50,11 @@ fi
 if [ ! -f ~/preconfig/backup/.bashrc.backup ]
 then
 	mv -f ~/.bashrc.backup ~/preconfig/backup/.bashrc.backup 
+fi
+## If .bashrc.backup file in in preconfig/backup folder does not exist. Copy from root folder to.
+if [ -f ~/.bashrc.backup ]
+then
+	rm -f ~/.bashrc.backup 
 fi
 
 if [ ! -f ~/preconfig/gitconfig/gitPushOriginMain.sh ]
