@@ -30,6 +30,16 @@ mv -f ~/.bashrc ~/.bashrc~
 
 sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^$/d' | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
+if [ ! -d ~/preconfig/gitconfig ]
+then
+	mkdir ~/preconfig/gitconfig 
+fi
+
+if [ ! -f ~/preconfig/gitconfig/gitPushOriginMain.sh ]
+then
+	touch  ~/preconfig/gitconfig/gitPushOriginMain.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/gitPushOriginMain.sh| sudo tee -a ~/preconfig/gitconfig/gitPushOriginMain.sh  
+fi
+
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
@@ -142,6 +152,7 @@ alias glo='git log --oneline'
 alias glog='git log --oneline --graph '
 alias gp='git push '
 alias gpom='git push origin main'
+alias gall='. ~/preconfig/gitconfig/gitPushOriginMain.sh '
 alias gr='git remote '
 alias gpl='git pull '
 alias gf='git fetch'
