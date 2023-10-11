@@ -1,11 +1,6 @@
 #!/bin/bash
 
 ### This is configuration for .vimrc file
-## If preconfig folder deos not exist. Create it
-if [ ! -d ~/preconfig ]
-then
-	mkdir ~/preconfig
-fi
 ## If the run.sh file in preconfig folder exist. Delete
 if [ -f ~/preconfig/run.sh ]
 then

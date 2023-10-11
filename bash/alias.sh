@@ -29,6 +29,11 @@ mv -f ~/.bashrc ~/.bashrc~
 
 sudo sed '/^alias/d' ~/.bashrc~ | sudo sed '/^$/d' | sudo sed '/^##/d' | sudo tee ~/.bashrc
 
+if [ ! -d ~/preconfig ]
+then
+	mkdir ~/preconfig
+fi
+
 if [ ! -d ~/preconfig/gitconfig ]
 then
 	mkdir ~/preconfig/gitconfig 
