@@ -1,7 +1,7 @@
 #!/bin/bash
-touch ~/preconfig/commands/1.txt
-echo !! > ~/preconfig/commands/1.txt
-sed 's/md //' ~/preconfig/commands/1.txt
-sed 's/mkdir //' ~/preconfig/commands/1.txt
-cd $(cat ~/preconfig/commands/1.txt)
-rm ~/preconfig/commands/1.txt
+touch ~/preconfig/commands/changeDirectory.txt
+echo !! > ~/preconfig/commands/changeDirectory.txt
+sed 's/md //' ~/preconfig/commands/changeDirectory.txt
+sed 's/mkdir //' ~/preconfig/commands/changeDirectory.txt
+cd $(cat ~/preconfig/commands/changeDirectory.txt)
+rm ~/preconfig/commands/changeDirectory.txt
