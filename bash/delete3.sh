@@ -9,13 +9,13 @@ rm -f ~/.bashrc
 rm -f ~/.ssh/id-ed25519
 
 ## If .vimrc in root folder does not exist. mv it from preconfig/backup folder
-if [ -f ~/.vimrc ]
+if [ ! -f ~/.vimrc ]
 then
 	mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
 fi
 
 ## If .bashrc in root folder does not exist. mv it from preconfig/backup folder
-if [ -f ~/.bashrc ]
+if [ ! -f ~/.bashrc ]
 then
 	mv ~/preconfig/backup/.bashrc.backup ~/.bashrc
 fi
