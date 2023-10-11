@@ -8,9 +8,18 @@ rm -f ~/.vimrc
 rm -f ~/.bashrc
 
 ## Restore backup files
-mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
-mv ~/preconfig/backup/.bashrc.backup ~/.bashrc
+## If .vimrc in root folder does not exist. mv it from preconfig/backup folder
+if [ ! -f ~/.vimrc ]
+then
+	mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
+fi
 
+## If .bashrc in root folder does not exist. mv it from preconfig/backup folder
+if [ ! -f ~/.bashrc ]
+then
+	mv ~/preconfig/backup/.bashrc.backup ~/.bashrc
+fi
+## Remove preconfig folder and .bashrc~ file
 rm -rf ~/preconfig
 sudo rm -f ~/.bashrc~
 
