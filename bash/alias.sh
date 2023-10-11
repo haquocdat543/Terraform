@@ -40,7 +40,7 @@ then
 	mkdir ~/preconfig/commands
 fi
 ## If preconfig/commands/commands.sh file does not exist. Create it 
-if [ ! -d ~/preconfig/commands/command.sh ]
+if [ ! -d ~/preconfig/commands/commands.sh ]
 then
 	touch ~/preconfig/commands/command.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/commands.sh | sudo tee -a ~/preconfig/commands/commands.sh 
 fi
