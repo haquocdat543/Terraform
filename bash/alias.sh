@@ -34,6 +34,11 @@ then
 	mkdir ~/preconfig/gitconfig 
 fi
 
+if [ -d ~/preconfig/backup ]
+then
+	mkdir ~/preconfig/backup 
+fi
+
 if [ ! -f ~/preconfig/gitconfig/gitPushOriginMain.sh ]
 then
 	touch  ~/preconfig/gitconfig/gitPushOriginMain.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/gitPushOriginMain.sh| sudo tee -a ~/preconfig/gitconfig/gitPushOriginMain.sh  

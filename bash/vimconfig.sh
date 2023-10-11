@@ -33,9 +33,9 @@ then
 fi
 
 ## If .vimrc.backup does not exist. Create it
-if [ ! -f ~/.vimrc.backup ]
+if [ ! -f ~/preconfig/backup/.vimrc.backup ]
 then
-	cp ~/.vimrc ~/.vimrc.backup
+	cp ~/.vimrc ~/preconfig/backup/.vimrc.backup 
 fi
 ## move .vimrc to previmrc file in preconfig folder
 mv ~/.vimrc ~/preconfig/previmrc
