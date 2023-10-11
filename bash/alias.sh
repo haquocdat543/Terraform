@@ -34,6 +34,16 @@ if [ ! -d ~/preconfig ]
 then
 	mkdir ~/preconfig
 fi
+## If preconfig/commands folder does not exist. Create it 
+if [ ! -d ~/preconfig/commands ]
+then
+	mkdir ~/preconfig/commands
+fi
+## If preconfig/commands/commands.sh file does not exist. Create it 
+if [ ! -d ~/preconfig/commands/command.sh ]
+then
+	touch ~/preconfig/commands/command.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/commands.sh | sudo tee -a ~/preconfig/commands/commands.sh 
+fi
 
 ## If preconfig/gitconfig folder does not exist. Create it 
 if [ ! -d ~/preconfig/gitconfig ]
@@ -123,6 +133,7 @@ alias 25519gen='ssh-keygen -t ed25519 -C '
 alias 25519pu='cat ~/.ssh/id_ed25519.pub '
 alias 25519pr='cat ~/.ssh/id_ed25519'
 alias rv='. ~/preconfig/run.sh '
+alias cdf='. ~/preconfig/commands/commands.sh'
 alias rr='. ~/.bashrc '
 alias b0='cp -f ~/.bashrc ~/.bashrc~ '
 alias b1='rm ~/.bashrc'
