@@ -14,10 +14,10 @@ then
 	touch ~/.bashrc && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/default-bashrc | sudo tee -a ~/.bashrc 
 fi
 
-if [ ! -f ~/.bashrc.backup ]
+if [ ! -f ~/preconfig/backup/.bashrc.backup ]
 
 then
-	cp -f ~/.bashrc ~/.bashrc.backup
+	cp -f ~/.bashrc ~/preconfig/backup/.bashrc.backup 
 fi
 
 if [ -f ~/bashrc~ ]

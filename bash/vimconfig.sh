@@ -35,7 +35,7 @@ fi
 ## move .vimrc to previmrc file in preconfig folder
 mv ~/.vimrc ~/preconfig/previmrc
 
-## move .vimrc int preconfig folder to root folder
+## move .vimrc in preconfig folder to root folder
 mv ~/preconfig/.vimrc ~/.vimrc
 
 EOF
