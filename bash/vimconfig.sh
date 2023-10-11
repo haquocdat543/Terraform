@@ -49,5 +49,6 @@ set number
 
 map \t :ter
 map \b :set backup
+map \n :set nowrap
 
 EOF
