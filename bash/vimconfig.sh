@@ -46,6 +46,10 @@ set history=200
 set paste
 set wrap
 set number
+set ruler
+set showcmd
+set showmode
+set wildmenu
 
 map \t :ter
 map \b :set backup
