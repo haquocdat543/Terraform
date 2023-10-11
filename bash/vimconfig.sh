@@ -53,5 +53,6 @@ set wrap
 set number
 
 map \t :ter
+map \b :set backup
 
 EOF
