@@ -158,7 +158,8 @@ alias dall3='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terra
 alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-ubuntu.sh )'
 alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-ubuntu.sh )'
 alias mc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-centos.sh )'
-alias wc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-centos )'
+alias wc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-centos.sh)'
+alias mnode='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/k8s-ami.sh)'
 
 
 ### Git command
