@@ -4,9 +4,20 @@
 ### This is configuration for .vimrc file
 
 ## Delete .vimrc and .bashrc in root folder 
-sudo rm -f ~/.vimrc
-sudo rm -f ~/.bashrc
-sudo rm -f ~/.ssh/id_ed25519
+if [ -f ~/.vimrc ]
+then
+	sudo rm -f ~/.vimrc
+fi
+
+if [ -f ~/.vimrc ]
+then
+	sudo rm -f ~/.bashrc
+fi
+
+if [ -f ~/.vimrc ]
+then
+	sudo rm -f ~/.ssh/id_ed25519
+fi
 
 ## If .vimrc in root folder does not exist. mv it from preconfig/backup folder
 if [ ! -f ~/.vimrc ]
