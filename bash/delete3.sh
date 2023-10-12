@@ -9,12 +9,12 @@ then
 	sudo rm -f ~/.vimrc
 fi
 
-if [ -f ~/.vimrc ]
+if [ -f ~/.bashrc]
 then
 	sudo rm -f ~/.bashrc
 fi
 
-if [ -f ~/.vimrc ]
+if [ -f ~/.ssh/id_ed25519 ]
 then
 	sudo rm -f ~/.ssh/id_ed25519
 fi
