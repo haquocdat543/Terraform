@@ -1,5 +1,5 @@
 #!/bin/bash
-### This is use for command dall2
+### This is use for command dall3
 
 ### This is configuration for .vimrc file
 
@@ -20,13 +20,14 @@ then
 fi
 
 ## If .vimrc in root folder does not exist. mv it from preconfig/backup folder
-if [ ! -f ~/.vimrc ]
+if [ ! -f ~/.vimrc ] && [ -f ~/preconfig/backup/.vimrc.backup ]
 then
 	mv ~/preconfig/backup/.vimrc.backup ~/.vimrc
 fi
 
 ## If .bashrc in root folder does not exist. mv it from preconfig/backup folder
-if [ ! -f ~/.bashrc ]
+if [ ! -f ~/.bashrc ] && [ -f ~/preconfig/backup/.bashrc.backup ]
+
 then
 	mv ~/preconfig/backup/.bashrc.backup ~/.bashrc
 fi
