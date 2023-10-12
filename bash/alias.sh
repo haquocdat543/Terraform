@@ -199,6 +199,7 @@ alias gl10='git log -n 10 '
 alias glog='git log --oneline --graph '
 alias gp='git push '
 alias gpom='git push origin main'
+alias gpomf='git push origin main -f'
 alias gall='. ~/preconfig/gitconfig/gitPushOriginMain.sh '
 alias gr='git remote '
 alias gpl='git pull '
@@ -424,5 +425,7 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 clear
+bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
+
 exec bash
 
