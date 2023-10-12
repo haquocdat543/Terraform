@@ -423,6 +423,6 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 
 EOF
 
+clear
 exec bash
 
-clear
