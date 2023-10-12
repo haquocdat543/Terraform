@@ -425,7 +425,6 @@ alias idc='sudo curl -L "https://github.com/docker/compose/releases/download/1.2
 EOF
 
 clear
-bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh) '
 
 exec bash
 
