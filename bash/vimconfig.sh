@@ -55,4 +55,6 @@ map \t :ter
 map \b :set backup
 map \n :set nowrap
 
+iletype plugin on
+set omnifunc=syntaxcomplete#Complete
 EOF
