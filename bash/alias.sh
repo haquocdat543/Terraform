@@ -388,7 +388,7 @@ alias kepsp='kubectl edit podsecuritypolicy '
 alias kge='kubectl get event '
 alias ktn='kubectl taint node '
 
-alias kl='kubectl logs '
+alias klg='kubectl logs '
 alias kn='kubectl config set-context --current --namespace '
 alias kgns='kubectl get namespace '
 alias kgct='kubectl config get-contexts '
