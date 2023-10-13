@@ -56,6 +56,11 @@ then
 	mkdir ~/preconfig/servicePatch
 fi
 
+if [ ! -d ~/preconfig/controlplaneCertificate ]
+then
+	mkdir ~/preconfig/controlplaneCertificate 
+fi
+
 ## If preconfig/backup folder does not exist. Create it 
 if [ ! -d ~/preconfig/backup ]
 then
@@ -94,6 +99,11 @@ fi
 if [ ! -f ~/preconfig/servicePatch/clusterIP.sh ]
 then
 	touch  ~/preconfig/servicePatch/clusterIP.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/clusterIP.sh | sudo tee -a ~/preconfig/servicePatch/clusterIP.sh  
+fi
+
+if [ ! -f ~/preconfig//controlplaneCertificate/controlplaneCertificate .sh ]
+then
+	touch  ~/preconfig/controlplaneCertificate/controlplaneCertificate.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash//controlplaneCertificate/controlplaneCertificate.sh | sudo tee -a ~/preconfig/controlplaneCertificate/controlplaneCertificate.sh  
 fi
 
 cat << EOF | sudo tee -a ~/.bashrc
