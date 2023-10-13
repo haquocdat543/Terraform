@@ -75,26 +75,27 @@ fi
 ## If preconfig/gitconfig/gitPushOriginMain.sh file does not exist. Create it 
 if [ ! -f ~/preconfig/gitconfig/gitPushOriginMain.sh ]
 then
-	touch  ~/preconfig/gitconfig/gitPushOriginMain.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/gitPushOriginMain.sh| sudo tee -a ~/preconfig/gitconfig/gitPushOriginMain.sh  
+	touch  ~/preconfig/gitconfig/gitPushOriginMain.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/gitPushOriginMain.sh | sudo tee -a ~/preconfig/gitconfig/gitPushOriginMain.sh  
 fi
 
 ## If preconfig/servicePatch/nodePort.sh file does not exist. Create it 
 if [ ! -f ~/preconfig/servicePatch/nodePort.sh ]
 then
-	touch  ~/preconfig/servicePatch/nodePort.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/nodePort.sh| sudo tee -a ~/preconfig/servicePatch/nodePort.sh  
+	touch  ~/preconfig/servicePatch/nodePort.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/nodePort.sh | sudo tee -a ~/preconfig/servicePatch/nodePort.sh  
 fi
 
 ## If preconfig/servicePatch/loadBalancer.sh file does not exist. Create it 
 if [ ! -f ~/preconfig/servicePatch/loadBalancer.sh ]
 then
-	touch  ~/preconfig/servicePatch/loadBalancer.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/loadBalancer.sh| sudo tee -a ~/preconfig/servicePatch/loadBalancer.sh  
+	touch  ~/preconfig/servicePatch/loadBalancer.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/loadBalancer.sh | sudo tee -a ~/preconfig/servicePatch/loadBalancer.sh  
 fi
 
 ## If preconfig/servicePatch/clusterIP.sh file does not exist. Create it 
 if [ ! -f ~/preconfig/servicePatch/clusterIP.sh ]
 then
-	touch  ~/preconfig/servicePatch/clusterIP.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/clusterIP.sh| sudo tee -a ~/preconfig/servicePatch/clusterIP.sh  
+	touch  ~/preconfig/servicePatch/clusterIP.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/clusterIP.sh | sudo tee -a ~/preconfig/servicePatch/clusterIP.sh  
 fi
+
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
