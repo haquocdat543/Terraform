@@ -260,6 +260,7 @@ alias djw='docker swarm join-token worker '
 
 alias k='kubectl '
 alias kl='kubectl label '
+alias ks='kubectl scale '
 alias des='describe '
 alias de='delete '
 alias km='kubeadm '
