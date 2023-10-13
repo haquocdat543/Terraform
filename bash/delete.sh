@@ -31,3 +31,4 @@ fi
 rm -rf ~/preconfig
 sudo rm -f ~/.bashrc~
 
+exec bash

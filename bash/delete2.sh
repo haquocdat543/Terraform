@@ -43,3 +43,4 @@ then
 	rm -rf ~/AgoCD
 fi
 
+exec bash

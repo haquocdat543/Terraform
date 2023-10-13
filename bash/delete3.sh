@@ -50,4 +50,3 @@ fi
 
 ## Clear all alias
 exec bash
-
