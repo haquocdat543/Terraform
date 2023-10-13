@@ -51,6 +51,11 @@ then
 	mkdir ~/preconfig/gitconfig 
 fi
 
+if [ ! -d ~/preconfig/servicePatch ]
+then
+	mkdir ~/preconfig/servicePatch
+fi
+
 ## If preconfig/backup folder does not exist. Create it 
 if [ ! -d ~/preconfig/backup ]
 then
@@ -67,11 +72,29 @@ then
 	rm -f ~/.bashrc.backup 
 fi
 
+## If preconfig/gitconfig/gitPushOriginMain.sh file does not exist. Create it 
 if [ ! -f ~/preconfig/gitconfig/gitPushOriginMain.sh ]
 then
 	touch  ~/preconfig/gitconfig/gitPushOriginMain.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/gitPushOriginMain.sh| sudo tee -a ~/preconfig/gitconfig/gitPushOriginMain.sh  
 fi
 
+## If preconfig/servicePatch/nodePort.sh file does not exist. Create it 
+if [ ! -f ~/preconfig/servicePatch/nodePort.sh ]
+then
+	touch  ~/preconfig/nodePort/servicePatch/nodePort.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/nodePort.sh| sudo tee -a ~/preconfig/servicePatch/nodePort.sh  
+fi
+
+## If preconfig/servicePatch/loadBalancer.sh file does not exist. Create it 
+if [ ! -f ~/preconfig/servicePatch/loadBalancer.sh ]
+then
+	touch  ~/preconfig/nodePort/servicePatch/loadBalancer.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/loadBalancer.sh| sudo tee -a ~/preconfig/servicePatch/loadBalancer.sh  
+fi
+
+## If preconfig/servicePatch/clusterIP.sh file does not exist. Create it 
+if [ ! -f ~/preconfig/servicePatch/clusterIP.sh ]
+then
+	touch  ~/preconfig/nodePort/servicePatch/clusterIP.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/clusterIP.sh| sudo tee -a ~/preconfig/servicePatch/clusterIP.sh  
+fi
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
@@ -340,9 +363,9 @@ alias kdnp='kubectl delete networkpolicies '
 alias kdsa='kubectl delete serviceaccount '
 alias kdpsp='kubectl delete podsecuritypolicy '
 
-alias kpsci='. ~/preconfig/nodePatch/clusterIP.sh'
-alias kpslb='. ~/preconfig/nodePatch/loadBalancer.sh'
-alias kpsnp='. ~/preconfig/nodePatch/nodePort.sh'
+alias kpsci='. ~/preconfig/servicePatch/clusterIP.sh'
+alias kpslb='. ~/preconfig/servicePatch/loadBalancer.sh'
+alias kpsnp='. ~/preconfig/servicePatch/nodePort.sh'
 alias kpp='kubectl patch pod '
 alias kpn='kubectl patch node '
 alias kps='kubectl patch svc '
