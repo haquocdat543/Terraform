@@ -259,6 +259,7 @@ alias djw='docker swarm join-token worker '
 ### Kubectl command
 
 alias k='kubectl '
+alias kp='kubectl proxy'
 alias kl='kubectl label '
 alias ks='kubectl scale '
 alias des='describe '
