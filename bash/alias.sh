@@ -310,7 +310,7 @@ alias kdescb='kubectl describe clusterrolebindings '
 alias kdesi='kubectl describe ingress '
 alias kdesr='kubectl describe role '
 alias kdesnp='kubectl describe networkpolicies '
-alias kdesa='kubectl describe serviceaccount '
+alias kdessa='kubectl describe serviceaccount '
 alias kdespsp='kubectl describe podsecuritypolicies '
 
 alias kdp='kubectl delete pod '
