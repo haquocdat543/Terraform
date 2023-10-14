@@ -56,10 +56,10 @@ map <C-t> :ter<CR>
 map <C-b> :set backup<CR>
 map <C-h> :noh<CR>
 
-nnoremap <Left> :echoe 'use h key instead'
-nnoremap <Right> :echoe 'use l key instead'
-nnoremap <Up> :echoe 'use k key instead'
-nnoremap <Down> :echoe 'use j key instead'
+nnoremap <Left> :echoe 'use h key instead'<CR>
+nnoremap <Right> :echoe 'use l key instead'<CR>
+nnoremap <Up> :echoe 'use k key instead'<CR>
+nnoremap <Down> :echoe 'use j key instead'<CR>
 
 EOF
 
