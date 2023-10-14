@@ -62,3 +62,5 @@ map <Up> :echoe 'use k key instead'
 map <Down> :echoe 'use j key instead'
 
 EOF
+
+clear
