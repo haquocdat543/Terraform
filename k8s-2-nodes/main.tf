@@ -46,8 +46,6 @@ resource "aws_instance" "Master" {
     network_interface_id = aws_network_interface.Master.id
   }
 
-  user_data = file("../bash/worker-node-centos.sh")
-
   tags = {
     "Name" = "Master"
   }
@@ -63,8 +61,6 @@ resource "aws_instance" "Worker" {
     device_index         = 0
     network_interface_id = aws_network_interface.Worker.id
   }
-
-  user_data = file("../bash/worker-node-centos.sh")
   
   tags = {
     "Name" = "Worker"
