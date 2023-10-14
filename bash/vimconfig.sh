@@ -50,9 +50,15 @@ set ruler
 set showcmd
 set showmode
 set wildmenu
+set laststatus=2
 
-map \t :ter
-map \b :set backup
-map \n :set nowrap
+map <C-t> :ter<CR>
+map <C-b> :set backup<CR>
+map <C-n> :noh<CR>
+
+map <Left> :echoe 'use h key instead'
+map <Right> :echoe 'use l key instead'
+map <Up> :echoe 'use k key instead'
+map <Down> :echoe 'use j key instead'
 
 EOF
