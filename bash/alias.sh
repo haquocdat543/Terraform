@@ -1,4 +1,4 @@
-#!/bin/bash
+
 ## Run bash from internet using following command: 
 ## bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )
 ## If you want to run k8s master on centos. Run following command: 
@@ -247,6 +247,19 @@ alias gsd='git stash drop '
 alias gssh='git stash show '
 alias gcn='git config --global user.name '
 alias gce='git config --global user.email '
+alias gcnh='git config --global user.name "haquocdat543"'
+alias gcen='git config --global user.email "wwwdatha543@gmail.com"'
+
+### Docker command
+
+alias tfi='terraform init '
+alias tfs='terraform show '
+alias tfp='terraform plan '
+alias tfr='terraform refresh '
+alias tfa='terraform apply '
+alias tfd='terraform deploy '
+alias tfaa='terraform apply --auto-approve '
+alias tfda='terraform deploy --auto-approve '
 
 ### Docker command
 
