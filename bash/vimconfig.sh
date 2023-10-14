@@ -54,12 +54,12 @@ set laststatus=2
 
 map <C-t> :ter<CR>
 map <C-b> :set backup<CR>
-map <C-n> :noh<CR>
+map <C-h> :noh<CR>
 
-map <Left> :echoe 'use h key instead'
-map <Right> :echoe 'use l key instead'
-map <Up> :echoe 'use k key instead'
-map <Down> :echoe 'use j key instead'
+nnoremap <Left> :echoe 'use h key instead'
+nnoremap <Right> :echoe 'use l key instead'
+nnoremap <Up> :echoe 'use k key instead'
+nnoremap <Down> :echoe 'use j key instead'
 
 EOF
 
