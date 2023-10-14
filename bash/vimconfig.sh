@@ -41,6 +41,7 @@ mv ~/preconfig/.vimrc ~/.vimrc
 EOF
 ## Write content to .vimrc file in preconfig folder
 cat << EOF | sudo tee -a ~/preconfig/.vimrc
+let mapleader = " "
 
 set history=200
 set paste
@@ -61,6 +62,9 @@ nnoremap <Left> :echoe 'use h key instead'<CR>
 nnoremap <Right> :echoe 'use l key instead'<CR>
 nnoremap <Up> :echoe 'use k key instead'<CR>
 nnoremap <Down> :echoe 'use j key instead'<CR>
+
+nnoremap <mapleader>\ :vsplit
+nnoremap <mapleader>/ :split
 
 EOF
 
