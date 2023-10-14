@@ -55,6 +55,7 @@ set laststatus=2
 map <C-t> :ter<CR>
 map <C-b> :set backup<CR>
 map <C-h> :noh<CR>
+map <C-q> :q!<CR>
 
 nnoremap <Left> :echoe 'use h key instead'<CR>
 nnoremap <Right> :echoe 'use l key instead'<CR>
