@@ -248,7 +248,7 @@ alias gssh='git stash show '
 alias gcn='git config --global user.name '
 alias gce='git config --global user.email '
 alias gcnh='git config --global user.name "haquocdat543"'
-alias gcen='git config --global user.email "wwwdatha543@gmail.com"'
+alias gceh='git config --global user.email "wwwdatha543@gmail.com"'
 
 ### Docker command
 
