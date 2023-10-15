@@ -260,7 +260,7 @@ alias tfro='terraform -refresh-only '
 alias tfa='terraform apply '
 alias tfd='terraform deploy '
 alias tfaa='terraform apply --auto-approve '
-alias tfda='terraform deploy --auto-approve '
+alias tfda='terraform destroy --auto-approve '
 
 ### Docker command
 
