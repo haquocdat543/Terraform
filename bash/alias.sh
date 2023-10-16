@@ -205,6 +205,11 @@ alias gT='git clone git@github.com:haquocdat543/Terraform.git'
 alias gA='git clone git@github.com:haquocdat543/ArgoCD.git'
 alias gc='git commit -m '
 alias gcu='git commit -m "Update"'
+alias gt='git tag '
+alias gta='git tag -a'
+alias gtd='git tag -d'
+## if you want to push all tags to repo use: git push <remote> <branch> --tags
+## if you want to delete all tags to repo use: git push --delete <remote> <branch> --tags && git tag -d --tags
 alias gs='git status '
 alias ga='git add '
 alias gaa='git add . '
