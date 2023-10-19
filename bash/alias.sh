@@ -168,6 +168,9 @@ alias cb='cd ..'
 alias cb2='cd ../..'
 alias cb3='cd ../../..'
 alias vi="vi"
+alias vinv="vi ~/.config/nvim/init.vim"
+alias nvimplug="sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
 alias val='vi ~/.bashrc'
 alias vicp='vi ./docker-compose.yaml'
 alias vidk='vi ./Dockerfile'
