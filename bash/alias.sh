@@ -45,6 +45,11 @@ if [ ! -d ~/preconfig/docs ]
 then
 	mkdir ~/preconfig/docs
 fi
+## If preconfig/vimconfig folder does not exist. Create it 
+if [ ! -d ~/preconfig/vimconfig ]
+then
+	mkdir ~/preconfig/vimconfig
+fi
 ## If preconfig/commands/commands.sh file does not exist. Create it 
 if [ ! -d ~/preconfig/commands/commands.sh ]
 then
