@@ -62,8 +62,15 @@ call plug#begin()
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
 
-" Make sure you use single quotes
+" Use release branch (recommended)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Or build from source code by using npm
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+
+" Make sure you use single quotes
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 
