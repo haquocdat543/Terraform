@@ -99,12 +99,17 @@ call plug#end()
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
 
-map <C-t> :ter<CR>
+map <C-T> :ter<CR>
 map <C-b> :set backup<CR>
 map <C-h> :noh<CR>
 map <C-q> :q!<CR>
 map <C-c> :%s/
 map <C-i> :PlugInstall<CR>
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <Left> :echoe 'use h key instead'<CR>
 nnoremap <Right> :echoe 'use l key instead'<CR>
