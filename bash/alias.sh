@@ -112,11 +112,20 @@ then
 	touch  ~/preconfig/servicePatch/clusterIP.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/servicePatch/clusterIP.sh | sudo tee -a ~/preconfig/servicePatch/clusterIP.sh  
 fi
 
-if [ ! -f ~/preconfig//controlplaneCertificate/controlplaneCertificate.sh ]
+if [ ! -f ~/preconfig/controlplaneCertificate/controlplaneCertificate.sh ]
 then
 	touch  ~/preconfig/controlplaneCertificate/controlplaneCertificate.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/controlplaneCertificate/controlplaneCertificate.sh | sudo tee -a ~/preconfig/controlplaneCertificate/controlplaneCertificate.sh  
 fi
 
+if [ ! -f ~/preconfig/vimconfig/nvimen.sh ]
+then
+	touch  ~/preconfig/vimconfig/nvimen.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig/nvimen.sh | sudo tee -a ~/preconfig/vimconfig/nvimen.sh  
+fi
+
+if [ ! -f ~/preconfig/vimconfig/vimen.sh ]
+then
+	touch  ~/preconfig/vimconfig/vimen.sh && curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig/vimen.sh | sudo tee -a ~/preconfig/vimconfig/vimen.sh  
+fi
 cat << EOF | sudo tee -a ~/.bashrc
 
 ### User specific aliases and functions
@@ -158,7 +167,7 @@ alias cl='clear '
 alias cb='cd ..'
 alias cb2='cd ../..'
 alias cb3='cd ../../..'
-alias vi='vi'
+alias vi="vi"
 alias val='vi ~/.bashrc'
 alias vicp='vi ./docker-compose.yaml'
 alias vidk='vi ./Dockerfile'
