@@ -39,6 +39,12 @@ if [ ! -d ~/preconfig/commands ]
 then
 	mkdir ~/preconfig/commands
 fi
+
+## If preconfig/docs folder does not exist. Create it 
+if [ ! -d ~/preconfig/docs ]
+then
+	mkdir ~/preconfig/docs
+fi
 ## If preconfig/commands/commands.sh file does not exist. Create it 
 if [ ! -d ~/preconfig/commands/commands.sh ]
 then
