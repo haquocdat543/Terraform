@@ -136,6 +136,8 @@ alias mv='mv -f'
 
 ### Linux command
 
+alias mb='make build'
+alias m='make'
 alias ll='ls -la '
 alias lr='ll ~ '
 alias lll='ll /'
