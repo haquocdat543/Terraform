@@ -1,39 +1,28 @@
-# Terraform for k8s and more
+# Suitcase for k8s and more
 
 ## Configuration for linux user
-
-### Alias
-```
-alias up1='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/alias.sh )'
-up1
-```
-### Vim Configuration 
-```
-alias up2='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/vimconfig.sh )'
-up2
-```
 ## Install k8s
 
 ### Ubuntu
 
 #### Master node
 ```
-alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-ubuntu.sh )'
+alias mu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Suitcase/main/bash/master-ubuntu.sh )'
 mu
 ```
 #### Worker node
 ```
-alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-ubuntu.sh )'
+alias wu='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Suitcase/main/bash/worker-ubuntu.sh )'
 wu
 ```
 ### Centos
 #### Master node
 ```
-alias mc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/master-centos.sh )'
+alias mc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Suitcase/main/bash/master-centos.sh )'
 mc
 ```
 #### Worker node
 ```
-alias wc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Terraform/main/bash/worker-centos )'
+alias wc='bash <(curl -s https://raw.githubusercontent.com/haquocdat543/Suitcase/main/bash/worker-centos )'
 wc
 ```
